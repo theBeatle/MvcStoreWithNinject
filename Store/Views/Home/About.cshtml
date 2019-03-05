@@ -12,8 +12,10 @@
     <br />
     <input type="submit" value="Get coutries Qty" />
 }
+<br />
+<hr />
 
 @if (Model != null)
 {
-    @Html.DisplayFor(m => m.Quantity)
+    <p>Countries quantity - @Html.DisplayFor(m => m.Quantity)</p>
 }
