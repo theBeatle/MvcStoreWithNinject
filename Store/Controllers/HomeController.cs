@@ -1,4 +1,5 @@
-﻿using BusinessLogicLayer;
+﻿
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Store.Controllers
 
         public ActionResult About()
         {
-            var result = bll.GetProducersCountByConcreteMark();
+            var result = bll.GetCountriesByConcreteMark("sddd");
 
 
             return View();

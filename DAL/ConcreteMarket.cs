@@ -16,3 +16,4 @@ namespace DAL
         public virtual DbSet<Producer> Producers { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
     }
+}
