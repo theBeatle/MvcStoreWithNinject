@@ -1,5 +1,6 @@
 ﻿
 using BLL;
+using Store.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,15 @@ namespace Store.Controllers
         public ActionResult About()
         {
             var result = bll.GetCountriesByConcreteMark("sddd");
+
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult About(AboutModel model)
+        {
+            var result = bll.GetCountriesByConcreteMark(model.ConcreteMark);
 
 
             return View();

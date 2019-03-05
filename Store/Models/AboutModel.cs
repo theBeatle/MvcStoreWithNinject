@@ -8,6 +8,7 @@ namespace Store.Models
     public class AboutModel
     {
         public string ConcreteMark { get; set; }
+        public int Quantity { get; set; }
     }
 
 }
