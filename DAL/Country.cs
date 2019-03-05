@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace DataAccessLayer
+namespace DAL
 {
     public class Country
     {
+
         public Country()
         {
             Producers = new HashSet<Producer>();

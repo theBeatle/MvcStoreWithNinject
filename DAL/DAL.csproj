@@ -50,7 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete.cs" />
     <Compile Include="ConcreteMarket.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="CustomInitializer.cs" />
+    <Compile Include="MyDal.cs" />
+    <Compile Include="Producer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

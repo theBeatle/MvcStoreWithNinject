@@ -7,5 +7,6 @@ namespace Store.Models
 {
     public class AboutModel
     {
+        public intMyProperty { get; set; }
     }
 }
