@@ -1,17 +1,19 @@
-﻿
-using BLL;
+﻿using BLL;
 using Store.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+
+
 using System.Web.Mvc;
 
 namespace Store.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly MyBll bll = new MyBll();
+        private readonly IMyBll bll;// = new MyBll();
+
+        public HomeController(IMyBll bll)
+        {
+            this.bll = bll;
+        }
         public ActionResult Index()
         {
             return View();
